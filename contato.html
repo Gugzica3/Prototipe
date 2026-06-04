@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Segurança -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <title>Contato — Projeto Encantar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="blobs" aria-hidden="true">
+ <div class="blob b1"></div>
+ <div class="blob b2"></div>
+ <div class="blob b3"></div>
+  </div>
+ <nav class="nav">
+ <a href="index.html" class="brand">
+ <span class="brand-orb" aria-hidden="true"></span>
+ Projeto Encantar
+ </a>
+ <ul class="nav-links">
+ <li><a href="index.html">Início</a></li>
+ <li><a href="sobre.html">O projeto</a></li>
+ <li><a href="familias.html">Para famílias</a></li>
+ <li><a href="contato.html" class="is-active">Contato</a></li>
+ <li><a href="https://ibass.com.br/portal-transparencia/" target="_blank" rel="noopener noreferrer">Transparência</a></li>
+ </ul>
+ <a href="contato.html" class="nav-cta">Fale conosco</a>
+ <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
+ <span></span><span></span><span></span>
+ </button>
+  </nav>
+  <!-- Menu mobile -->
+  <div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menu mobile">
+ <a href="index.html">Início</a>
+ <a href="sobre.html">O projeto</a>
+ <a href="familias.html">Para famílias</a>
+ <a href="contato.html" class="is-active">Contato</a>
+ <a href="https://ibass.com.br/portal-transparencia/" target="_blank" rel="noopener noreferrer">Transparência</a>
+ <a href="contato.html" class="nav-mobile-cta">Fale conosco</a>
+  </div>
+  <main>
+
+ <section class="sec page-hero">
+ <div class="container">
+ <h1 class="sec-title r">Estamos aqui. Fala com a gente.</h1>
+ <p class="sec-sub r d1">Se você tem uma dúvida, quer entender como o atendimento funciona ou precisa de orientação para a sua família, nossos canais estão abertos para isso.</p>
+ </div>
+ </section>
+
+ <section class="sec sec--gray">
+ <div class="container">
+ <h2 class="sec-title r">Nossos canais oficiais.</h2>
+ <div class="canais">
+ <div class="glass canal r d1"><p class="canal-l">E-mail</p><p><a href="mailto:contato@ibass.com.br">contato@ibass.com.br</a></p></div>
+ <div class="glass canal r d2"><p class="canal-l">Site institucional</p><p><a href="https://ibass.com.br" target="_blank" rel="noopener noreferrer">ibass.com.br</a></p></div>
+ <div class="glass canal r d3"><p class="canal-l">Endereço</p><p>Av. Presidente Juscelino Kubitschek de Oliveira, 1921 — São José do Rio Preto, SP</p></div>
+ <div class="glass canal r d4"><p class="canal-l">Horário de atendimento</p><p>Segunda a sexta, das 7h às 19h.</p></div>
+ </div>
+ </div>
+ </section>
+
+ <section class="sec sec--center">
+ <div class="container">
+ <h2 class="sec-title r">Prefere escrever direto pra gente?</h2>
+ <form class="form r d1" action="agradecimento.html" method="post">
+ <div><label for="nome">Nome completo</label><input type="text" id="nome" name="nome" placeholder="Seu nome" required /></div>
+ <div><label for="email">E-mail</label><input type="email" id="email" name="email" placeholder="seu@email.com" required /></div>
+ <div><label for="tel">Telefone / Celular (opcional)</label><input type="tel" id="tel" name="telefone" placeholder="(00) 00000-0000" /></div>
+ <div>
+ <label>Você é:</label>
+ <div class="radio-group">
+ <label><input type="radio" name="perfil" value="familia" /> Família</label>
+ <label><input type="radio" name="perfil" value="profissional" /> Profissional de saúde</label>
+ <label><input type="radio" name="perfil" value="imprensa" /> Imprensa</label>
+ <label><input type="radio" name="perfil" value="outro" /> Outro</label>
+ </div>
+ </div>
+ <div><label for="msg">Mensagem</label><textarea id="msg" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea></div>
+ <!-- Honeypot anti-spam: campo oculto, não preencher -->
+ <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+ <label for="website">Deixe este campo em branco</label>
+ <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+ </div>
+ <div class="btns"><button type="submit" class="btn-p">Enviar mensagem</button></div>
+ <div style="display:flex;align-items:flex-start;gap:12px;margin-top:4px;text-align:left;">
+ <input type="checkbox" id="lgpd" name="lgpd" required style="width:16px;height:16px;margin-top:2px;flex-shrink:0;accent-color:var(--peach);" />
+ <label for="lgpd" style="font-size:13px;color:rgba(255,255,255,.45);line-height:1.6;text-align:left;">
+ Li e concordo com a <a href="#" style="color:var(--peach);text-decoration:underline;">Política de Privacidade</a>. Autorizo o IBASS — controlador dos dados — a utilizar as informações fornecidas exclusivamente para responder à minha solicitação, conforme a Lei nº 13.709/2018 (LGPD). Seus dados não serão compartilhados com terceiros nem usados para fins publicitários.
+ </label>
+ </div>
+ </form>
+ </div>
+ </section>
+
+ <section class="sec" id="ouvidoria">
+ <div class="container">
+ <div class="glass highlight-card r">
+ <h2 class="sec-title">Ouvidoria.</h2>
+ <p class="sec-sub">Nossa ouvidoria existe para receber sugestões, elogios, críticas e manifestações relacionadas ao Projeto Encantar. Todas as mensagens são registradas e recebem retorno formal.</p>
+ <div class="btns btns--center" style="margin-top:32px;">
+ <a href="#" class="btn-p">Acessar a ouvidoria</a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="sec sec--gray">
+ <div class="container">
+ <h2 class="sec-title r">Imprensa.</h2>
+ <p class="sec-sub r d1">Se você é jornalista ou produz conteúdo sobre saúde pública, neurodivergência ou políticas sociais, entre em contato com a nossa equipe pelo e-mail institucional com o assunto: <em>Imprensa</em>.</p>
+ <div class="btns r d2" style="margin-top:28px;">
+ <a href="mailto:contato@ibass.com.br?subject=Imprensa" class="btn-g">contato@ibass.com.br</a>
+ </div>
+ </div>
+ </section>
+
+ <section class="sec-close">
+ <div class="container">
+ <h2 class="sec-title r" style="max-width:620px;margin:0 auto 18px;">Ainda com dúvidas?</h2>
+ <p class="sec-sub r d1">Acesse a página para famílias e encontre respostas objetivas sobre como o nosso cuidado funciona e como sua família pode entrar no atendimento.</p>
+ <div class="btns btns--center r d2">
+ <a href="familias.html" class="btn-p">Ver informações para famílias</a>
+ </div>
+ </div>
+ </section>
+  </main>
+  <footer>
+ <div class="footer-in">
+ <div>
+ <h4>Links institucionais</h4>
+ <ul>
+ <li><a href="#">Política de Privacidade</a></li>
+ <li><a href="#">Política de Cookies</a></li>
+ <li><a href="#">Termos de Uso</a></li>
+ <li><a href="#">Política da Ouvidoria</a></li>
+ <li><a href="#">Política de Acesso à Informação</a></li>
+ </ul>
+ </div>
+ <div>
+ <h4>Canais</h4>
+ <ul>
+ <li><a href="mailto:contato@ibass.com.br">E-mail institucional: contato@ibass.com.br</a></li>
+ <li><a href="https://ibass.com.br" target="_blank" rel="noopener noreferrer">Site institucional do IBASS</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-copy">© Projeto Encantar · IBASS</div>
+  </footer>
+  <script>
+ /* Blob parallax — apenas desktop com mouse */
+ if (window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+ document.addEventListener('mousemove', e => {
+ const px = (e.clientX / innerWidth  - 0.5) * 16;
+ const py = (e.clientY / innerHeight - 0.5) * 16;
+ document.querySelectorAll('.blob').forEach((b, i) => {
+ b.style.transform = `translate(${px*(i+1)*.5}px, ${py*(i+1)*.5}px)`;
+ });
+ });
+ }
+ /* Scroll reveal */
+ const obs = new IntersectionObserver(es => {
+ es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
+ }, { threshold: .08 });
+ document.querySelectorAll('.r').forEach(el => obs.observe(el));
+ document.querySelectorAll('.hero .r, .page-hero .r, .pg404 .r, .pg-thanks .r')
+ .forEach((el, i) => setTimeout(() => el.classList.add('on'), i * 160));
+ /* Menu mobile */
+ const hb = document.getElementById('hamburger');
+ const nm = document.getElementById('navMobile');
+ if (hb && nm) {
+ hb.addEventListener('click', () => {
+ const o = nm.classList.toggle('open');
+ hb.classList.toggle('open', o);
+ hb.setAttribute('aria-expanded', o);
+ document.body.style.overflow = o ? 'hidden' : '';
+ });
+ nm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+ nm.classList.remove('open'); hb.classList.remove('open');
+ hb.setAttribute('aria-expanded','false'); document.body.style.overflow = '';
+ }));
+ }
+  </script>
+</body>
+</html>
