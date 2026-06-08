@@ -3,256 +3,293 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Segurança -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
   <title>O Projeto Encantar — Sobre</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <div class="blobs" aria-hidden="true">
- <div class="blob b1"></div>
- <div class="blob b2"></div>
- <div class="blob b3"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<nav class="nav">
+  <a href="index.html" class="brand">
+    <img src="logo.png" class="nav-logo" alt="Projeto Encantar"
+      onload="this.nextElementSibling.style.display='none'"
+      onerror="this.style.display='none'" />
+    <span class="brand-orb" aria-hidden="true"></span>
+    Projeto Encantar
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html" class="is-active">O projeto</a></li>
+    <li><a href="familias.html">Para famílias</a></li>
+
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="ouvidoria.html">Ouvidoria</a></li>
+  </ul>
+  <a href="contato.html" class="nav-cta">Fale conosco</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menu mobile">
+  <a href="index.html">Início</a>
+  <a href="sobre.html" class="is-active">O projeto</a>
+  <a href="familias.html">Para famílias</a>
+  <a href="contato.html">Contato</a>
+  <a href="ouvidoria.html">Ouvidoria</a>
+  <a href="contato.html" class="nav-mobile-cta">Fale conosco</a>
+</div>
+
+<main>
+
+  <section class="sec page-hero">
+    <div class="container">
+      <p class="eyebrow r">O Projeto Encantar</p>
+      <h1 class="sec-title r d1">Somos um centro de atendimento em neurodivergência construído com ciência, cuidado e responsabilidade pública.</h1>
+      <p class="sec-sub r d2">Nascemos para oferecer diagnóstico, tratamento clínico, educacional e terapêutico de excelência para pessoas com TEA, TDAH e outras neurodivergências, com atendimento 100% gratuito via SUS e apoio integral às famílias.</p>
+    </div>
+  </section>
+
+  <section class="sec sec--gray">
+    <div class="container">
+      <p class="eyebrow r">Por que existimos</p>
+      <h2 class="sec-title r d1">Um crescimento de mais de 1.000% em dez anos.</h2>
+      <p class="sec-sub r d2">São José do Rio Preto vive uma demanda crescente por atendimento especializado em neurodivergência. Em 2014, havia 127 crianças diagnosticadas na rede municipal. Em 2024, esse número chegou a 1.423, um crescimento de mais de 1.000% em dez anos.</p>
+      <p class="sec-sub r d3">Estimamos que hoje existam cerca de 6.050 pessoas com TEA no município. Milhares delas, e suas famílias, seguem sem perspectiva de atendimento. O Projeto Encantar nasceu para responder a essa realidade com estrutura, método e humanidade.</p>
+    </div>
+  </section>
+
+  <section class="sec sec--center">
+    <div class="container">
+      <p class="eyebrow r">Nossa missão</p>
+      <h2 class="sec-title r d1">Diagnóstico, tratamento e capacitação, com humanidade e evidência.</h2>
+      <p class="sec-sub r d2">Oferecer diagnóstico, tratamento clínico, educacional e terapêutico de excelência para pessoas com TEA, TDAH e outras neurodivergências, com apoio integral às famílias e capacitação de profissionais de saúde e educação, em um ambiente humanizado e baseado em evidências científicas.</p>
+    </div>
+  </section>
+
+  <section class="sec sec--salmon">
+    <div class="container">
+      <div class="two-col r">
+        <div>
+          <p class="eyebrow">Nossa visão</p>
+          <h2>Ser referência nacional, com impacto regional.</h2>
+          <p class="sec-sub" style="max-width:100%;">Ser um centro de referência nacional em atendimento e pesquisa em neurodivergência, com impacto regional em São José do Rio Preto e nos 102 municípios da DRS15.</p>
+        </div>
+        <div>
+          <p class="eyebrow">Nossos valores</p>
+          <h2>Cinco compromissos.</h2>
+          <ul class="list-clean">
+            <li>Inclusão Universal.</li>
+            <li>Humanização.</li>
+            <li>Inovação.</li>
+            <li>Excelência Clínica.</li>
+            <li>Responsabilidade Social.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--center">
+    <div class="container">
+      <p class="eyebrow r">Como estruturamos o nosso cuidado</p>
+      <h2 class="sec-title r d1">Quatro pilares para um cuidado consistente.</h2>
+      <p class="sec-sub r d2">Nosso modelo assistencial foi construído a partir de quatro pilares que garantem consistência clínica, individualização do atendimento e integração com a família e a rede pública.</p>
+      <div class="pillars">
+        <div class="pillar r d1"><p class="pillar-l">Pilar 1</p><p>Avaliação funcional estruturada.</p></div>
+        <div class="pillar r d2"><p class="pillar-l">Pilar 2</p><p>Intervenção baseada em ABA contemporânea, naturalista e humanizada.</p></div>
+        <div class="pillar r d3"><p class="pillar-l">Pilar 3</p><p>Monitoramento contínuo por dados.</p></div>
+        <div class="pillar r d4"><p class="pillar-l">Pilar 4</p><p>Integração com sua família e com a rede pública.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM ATENDEMOS — com gráfico pizza -->
+  <section class="sec">
+    <div class="container">
+      <p class="eyebrow r">Quem atendemos</p>
+      <h2 class="sec-title r d1">Crianças e adolescentes com suspeita ou diagnóstico de neurodivergência.</h2>
+      <p class="sec-sub r d2">Nosso atendimento é voltado para crianças e adolescentes com suspeita ou diagnóstico de neurodivergência, encaminhados pela rede municipal de saúde.</p>
+
+      <!-- Gráfico pizza + legenda -->
+      <div class="pie-section r d3">
+        <div class="donut-chart" role="img" aria-label="Gráfico: 34% TEA, 32% TDAH, 33% outros transtornos">
+          <div class="donut-hole">
+            <span class="donut-center-text">Perfis<br/>atendidos</span>
+          </div>
+        </div>
+        <ul class="pie-legend">
+          <li>
+            <span class="legend-dot" style="background:var(--peach-deep)"></span>
+            <strong>TEA</strong>&nbsp;— 34%
+          </li>
+          <li>
+            <span class="legend-dot" style="background:var(--lilac)"></span>
+            <strong>TDAH</strong>&nbsp;— 32%
+          </li>
+          <li>
+            <span class="legend-dot" style="background:var(--lavender)"></span>
+            <strong>Outros transtornos</strong>&nbsp;— 33%
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--gray">
+    <div class="container" style="text-align:center;">
+      <p class="eyebrow r">Nossa capacidade operacional</p>
+      <h2 class="sec-title r d1">1.300 atendimentos por mês.</h2>
+      <div class="grid4">
+        <div class="glass stat-card r d1"><div class="stat-n">60</div><p class="stat-d">Atendimentos por dia.</p></div>
+        <div class="glass stat-card r d2"><div class="stat-n">300</div><p class="stat-d">Atendimentos por semana.</p></div>
+        <div class="glass stat-card r d3"><div class="stat-n">1.300</div><p class="stat-d">Atendimentos por mês.</p></div>
+        <div class="glass stat-card r d4"><div class="stat-n" style="font-size:28px;line-height:1.2;">Seg–Sex<br/>7h–19h</div><p class="stat-d">Funcionamento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--salmon">
+    <div class="container">
+      <p class="eyebrow r">Nossa equipe</p>
+      <h2 class="sec-title r d1">Profissionais especializados em neurodivergência.</h2>
+      <p class="sec-sub r d2">Reunimos profissionais especializados em neurodivergência, com foco em atendimento direto, suporte familiar e coordenação clínica.</p>
+
+      <img src="Images/foto-equipe.jpeg" alt="Equipe Projeto Encantar" loading="lazy" class="r d3" style="width:100%;border-radius:20px;display:block;" />
+
+      <ul class="list-clean r d4">
+        <li>Psicopedagoga — aprendizagem, funções executivas, alfabetização.</li>
+        <li>Fonoaudióloga — comunicação, linguagem pragmática, motricidade orofacial.</li>
+        <li>Terapeuta Ocupacional — integração sensorial, autonomia, atividades de vida diária.</li>
+        <li>Psicóloga — regulação emocional, TCC/ABA, habilidades sociais.</li>
+        <li>Supervisora ABA — validação clínica e fidelidade metodológica.</li>
+        <li>Coordenadora ABA — operação do fluxo e supervisão das ATs.</li>
+        <li>Auxiliares Terapêuticas (ATs) — atendimento direto, coleta de dados, execução dos programas.</li>
+        <li>Assistente Social — acolhimento familiar, articulação de direitos, vulnerabilidade social.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <p class="eyebrow r">Governança</p>
+      <h2 class="sec-title r d1">Uma estrutura construída para durar.</h2>
+      <p class="sec-sub r d2">Operamos dentro de uma estrutura institucional que une execução, articulação pública e fiscalização independente.</p>
+      <div class="grid3" style="grid-template-columns:repeat(2,1fr);">
+        <div class="glass card r d1">
+          <img
+            src="https://www.riopreto.sp.gov.br/img/logotipo_prefeitura-hor_pos.png"
+            alt="Prefeitura de São José do Rio Preto"
+            loading="lazy"
+            style="height:28px;width:auto;object-fit:contain;display:block;margin-bottom:14px;max-width:150px;"
+            onerror="this.style.display='none'"
+          />
+          <p>Convênio, concessão da área física e repasse de recursos — Prefeitura de São José do Rio Preto.</p>
+        </div>
+        <div class="glass card r d2">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;flex-wrap:wrap;">
+            <img src="https://www.tjsp.jus.br/Download/Imagens/Logo/Logotipo_TJSP_original.png" alt="Tribunal de Justiça de São Paulo" loading="lazy" style="height:28px;width:auto;object-fit:contain;" onerror="this.style.display='none'" />
+            <img src="mpsp.png" alt="Ministério Público de São Paulo" loading="lazy" style="height:28px;width:auto;object-fit:contain;" onerror="this.style.display='none'" />
+          </div>
+          <p>Fiscalização e regularização via TAC — Vara da Infância e Ministério Público.</p>
+        </div>
+      </div>
+      <p class="sec-sub r d3" style="margin-top:28px;">Essa estrutura garante continuidade institucional, responsabilidade na execução e maior confiança pública.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2 class="sec-title r">O que nos diferencia.</h2>
+      <div class="diff-grid">
+        <div class="glass diff-card r d1"><p class="diff-n">01</p><h3>Gratuidade total via SUS</h3><p>Zero custo para as famílias. Em um mercado onde uma sessão de ABA custa entre R$ 150 e R$ 300, isso é um diferencial real e transformador.</p></div>
+        <div class="glass diff-card r d2"><p class="diff-n">02</p><h3>Base científica sólida</h3><p>ABA contemporânea, naturalista e humanizada. Protocolos como ADOS-2 e WISC. Tudo verificável e baseado em evidências.</p></div>
+        <div class="glass diff-card r d3"><p class="diff-n">03</p><h3>Governança inovadora</h3><p>Estrutura com fiscalização independente, segurança jurídica e continuidade institucional.</p></div>
+        <div class="glass diff-card r d4"><p class="diff-n">04</p><h3>Referência comprovada</h3><p>Nosso modelo é baseado em um ambulatório com o mesmo nome que opera há mais de 10 anos em Curitiba, com efetividade clínica comprovada.</p></div>
+        <div class="glass diff-card r d1"><p class="diff-n">05</p><h3>Abordagem centrada na família</h3><p>O cuidado não se restringe à criança. Acolhemos e capacitamos todo o núcleo familiar.</p></div>
+        <div class="glass diff-card r d2"><p class="diff-n">06</p><h3>Impacto regional</h3><p>Pensamos além de São José do Rio Preto. Nossa visão alcança os 102 municípios da DRS15.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-close">
+    <div class="container">
+      <h2 class="sec-title r" style="max-width:660px;margin:0 auto 18px;">Quer entender como sua família pode acessar o nosso atendimento?</h2>
+      <div class="btns btns--center r d1">
+        <a href="familias.html" class="btn-p">Informações para famílias</a>
+        <a href="familias.html#fluxo" class="btn-g">Ver como o atendimento funciona</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-in">
+    <div>
+      <h4>Links institucionais</h4>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="cookies.html">Política de Cookies</a></li>
+        <li><a href="termos.html">Termos de Uso</a></li>
+        <li><a href="politica-ouvidoria.html">Política da Ouvidoria</a></li>
+        <li><a href="acesso-informacao.html">Política de Acesso à Informação</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Canais</h4>
+      <ul>
+        <li><a href="contato.html">Fale conosco</a></li>
+        <li><a href="ouvidoria.html">Ouvidoria</a></li>
+    
+      </ul>
+    </div>
   </div>
- <nav class="nav">
- <a href="index.html" class="brand">
- <span class="brand-orb" aria-hidden="true"></span>
- Projeto Encantar
- </a>
- <ul class="nav-links">
- <li><a href="index.html">Início</a></li>
- <li><a href="sobre.html" class="is-active">O projeto</a></li>
- <li><a href="familias.html">Para famílias</a></li>
- <li><a href="contato.html">Contato</a></li>
- <li><a href="https://ibass.com.br/portal-transparencia/" target="_blank" rel="noopener noreferrer">Transparência</a></li>
- </ul>
- <a href="contato.html" class="nav-cta">Fale conosco</a>
- <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
- <span></span><span></span><span></span>
- </button>
-  </nav>
-  <!-- Menu mobile -->
-  <div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menu mobile">
- <a href="index.html">Início</a>
- <a href="sobre.html" class="is-active">O projeto</a>
- <a href="familias.html">Para famílias</a>
- <a href="contato.html">Contato</a>
- <a href="https://ibass.com.br/portal-transparencia/" target="_blank" rel="noopener noreferrer">Transparência</a>
- <a href="contato.html" class="nav-mobile-cta">Fale conosco</a>
-  </div>
-  <main>
+  <div class="footer-copy">© Projeto Encantar</div>
+</footer>
 
- <section class="sec page-hero">
- <div class="container">
- <p class="eyebrow r">O Projeto Encantar</p>
- <h1 class="sec-title r d1">Somos um centro de atendimento em neurodivergência construído com ciência, cuidado e responsabilidade pública.</h1>
- <p class="sec-sub r d2">Nascemos para oferecer diagnóstico, tratamento clínico, educacional e terapêutico de excelência para pessoas com TEA, TDAH e outras neurodivergências, com atendimento 100% gratuito via  e apoio integral às famílias.</p>
- </div>
- </section>
+<script>
+  if (window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    document.addEventListener('mousemove', e => {
+      const px = (e.clientX / innerWidth  - 0.5) * 16;
+      const py = (e.clientY / innerHeight - 0.5) * 16;
+      document.querySelectorAll('.blob').forEach((b, i) => {
+        b.style.transform = `translate(${px*(i+1)*.5}px, ${py*(i+1)*.5}px)`;
+      });
+    });
+  }
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
+  }, { threshold: .08 });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
+  document.querySelectorAll('.hero .r, .page-hero .r, .pg404 .r, .pg-thanks .r')
+    .forEach((el, i) => setTimeout(() => el.classList.add('on'), i * 160));
+  const hb = document.getElementById('hamburger');
+  const nm = document.getElementById('navMobile');
+  if (hb && nm) {
+    hb.addEventListener('click', () => {
+      const o = nm.classList.toggle('open');
+      hb.classList.toggle('open', o);
+      hb.setAttribute('aria-expanded', o);
+      document.body.style.overflow = o ? 'hidden' : '';
+    });
+    nm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nm.classList.remove('open'); hb.classList.remove('open');
+      hb.setAttribute('aria-expanded','false'); document.body.style.overflow = '';
+    }));
+  }
+</script>
 
- <section class="sec sec--gray">
- <div class="container">
- <p class="eyebrow r">Por que existimos</p>
- <h2 class="sec-title r d1">Um crescimento de mais de 1.000% em dez anos.</h2>
- <p class="sec-sub r d2">São José do Rio Preto vive uma demanda crescente por atendimento especializado em neurodivergência. Em 2014, havia 127 crianças diagnosticadas na rede municipal. Em 2024, esse número chegou a 1.423, um crescimento de mais de 1.000% em dez anos.</p>
- <p class="sec-sub r d3">Estimamos que hoje existam cerca de 6.050 pessoas com TEA no município. Milhares delas, e suas famílias, seguem sem perspectiva de atendimento. O Projeto Encantar nasceu para responder a essa realidade com estrutura, método e humanidade.</p>
- </div>
- </section>
-
- <section class="sec sec--center">
- <div class="container">
- <p class="eyebrow r">Nossa missão</p>
- <h2 class="sec-title r d1">Diagnóstico, tratamento e capacitação, com humanidade e evidência.</h2>
- <p class="sec-sub r d2">Oferecer diagnóstico, tratamento clínico, educacional e terapêutico de excelência para pessoas com TEA, TDAH e outras neurodivergências, com apoio integral às famílias e capacitação de profissionais de saúde e educação, em um ambiente humanizado e baseado em evidências científicas.</p>
- </div>
- </section>
-
- <section class="sec sec--salmon">
- <div class="container">
- <div class="two-col r">
- <div>
- <p class="eyebrow">Nossa visão</p>
- <h2>Ser referência nacional, com impacto regional.</h2>
- <p class="sec-sub" style="max-width:100%;">Ser um centro de referência nacional em atendimento e pesquisa em neurodivergência, com impacto regional em São José do Rio Preto e nos 102 municípios da DRS15.</p>
- </div>
- <div>
- <p class="eyebrow">Nossos valores</p>
- <h2>Cinco compromissos.</h2>
- <ul class="list-clean">
- <li>Inclusão Universal.</li>
- <li>Humanização.</li>
- <li>Inovação.</li>
- <li>Excelência Clínica.</li>
- <li>Responsabilidade Social.</li>
- </ul>
- </div>
- </div>
- </div>
- </section>
-
- <section class="sec sec--center">
- <div class="container">
- <p class="eyebrow r">Como estruturamos o nosso cuidado</p>
- <h2 class="sec-title r d1">Quatro pilares para um cuidado consistente.</h2>
- <p class="sec-sub r d2">Nosso modelo assistencial foi construído a partir de quatro pilares que garantem consistência clínica, individualização do atendimento e integração com a família e a rede pública.</p>
- <div class="pillars">
- <div class="pillar r d1"><p class="pillar-l">Pilar 1</p><p>Avaliação funcional estruturada.</p></div>
- <div class="pillar r d2"><p class="pillar-l">Pilar 2</p><p>Intervenção baseada em ABA contemporânea, naturalista e humanizada.</p></div>
- <div class="pillar r d3"><p class="pillar-l">Pilar 3</p><p>Monitoramento contínuo por dados.</p></div>
- <div class="pillar r d4"><p class="pillar-l">Pilar 4</p><p>Integração com sua família e com a rede pública.</p></div>
- </div>
- </div>
- </section>
-
- <section class="sec">
- <div class="container">
- <p class="eyebrow r">Quem atendemos</p>
- <h2 class="sec-title r d1">Crianças e adolescentes com suspeita ou diagnóstico de neurodivergência.</h2>
- <p class="sec-sub r d2">Nosso atendimento é voltado para crianças e adolescentes com suspeita ou diagnóstico de neurodivergência, encaminhados pela rede municipal de saúde.</p>
- <div class="grid3">
- <div class="glass card r d1"><p class="card-num">34%</p><p>TEA — Transtorno do Espectro Autista (34% do público atendido).</p></div>
- <div class="glass card r d2"><p class="card-num">32%</p><p>TDAH — Transtorno de Déficit de Atenção e Hiperatividade (32% do público atendido).</p></div>
- <div class="glass card r d3"><p class="card-num">33%</p><p>Outros transtornos do neurodesenvolvimento (33% do público atendido).</p></div>
- </div>
- </div>
- </section>
-
- <section class="sec sec--gray">
- <div class="container" style="text-align:center;">
- <p class="eyebrow r">Nossa capacidade operacional</p>
- <h2 class="sec-title r d1">1.300 atendimentos por mês.</h2>
- <div class="grid4">
- <div class="glass stat-card r d1"><div class="stat-n">60</div><p class="stat-d">Atendimentos por dia.</p></div>
- <div class="glass stat-card r d2"><div class="stat-n">300</div><p class="stat-d">Atendimentos por semana.</p></div>
- <div class="glass stat-card r d3"><div class="stat-n">1.300</div><p class="stat-d">Atendimentos por mês.</p></div>
- <div class="glass stat-card r d4"><div class="stat-n" style="font-size:28px;line-height:1.2;">Seg–Sex<br/>7h–19h</div><p class="stat-d">Funcionamento.</p></div>
- </div>
- </div>
- </section>
-
- <section class="sec sec--salmon">
- <div class="container">
- <p class="eyebrow r">Nossa equipe</p>
- <h2 class="sec-title r d1">Profissionais especializados em neurodivergência.</h2>
- <p class="sec-sub r d2">Reunimos profissionais especializados em neurodivergência, com foco em atendimento direto, suporte familiar e coordenação clínica.</p>
- <ul class="list-clean r d3">
- <li>Psicopedagoga — aprendizagem, funções executivas, alfabetização.</li>
- <li>Fonoaudióloga — comunicação, linguagem pragmática, motricidade orofacial.</li>
- <li>Terapeuta Ocupacional — integração sensorial, autonomia, atividades de vida diária.</li>
- <li>Psicóloga — regulação emocional, TCC/ABA, habilidades sociais.</li>
- <li>Supervisora ABA — validação clínica e fidelidade metodológica.</li>
- <li>Coordenadora ABA — operação do fluxo e supervisão das ATs.</li>
- <li>Auxiliares Terapêuticas (ATs) — atendimento direto, coleta de dados, execução dos programas.</li>
- <li>Assistente Social — acolhimento familiar, articulação de direitos, vulnerabilidade social.</li>
- </ul>
- </div>
- </section>
-
- <section class="sec">
- <div class="container">
- <p class="eyebrow r">Governança</p>
- <h2 class="sec-title r d1">Uma estrutura construída para durar.</h2>
- <p class="sec-sub r d2">Operamos dentro de uma governança tripartite que une execução, articulação pública e fiscalização independente.</p>
- <div class="grid3">
- <div class="glass card r d1">
- <div class="gov-card-logo"></div>
- <p>Convênio, concessão da área física e repasse de recursos.</p>
- </div>
- <div class="glass card r d2">
- <div class="gov-card-logo"></div>
- <p>Captação de recursos, execução operacional e expertise técnica.</p>
- </div>
- <div class="glass card r d3">
- <div class="gov-card-logo" style="flex-direction:column;align-items:flex-start;gap:6px;"></div>
- <p>Fiscalização e regularização via TAC.</p>
- </div>
- </div>
- <p class="sec-sub r d4" style="margin-top:28px;">Essa estrutura garante continuidade institucional, responsabilidade na execução e maior confiança pública.</p>
- </div>
- </section>
-
- <section class="sec">
- <div class="container">
- <h2 class="sec-title r">O que nos diferencia.</h2>
- <div class="diff-grid">
- <div class="glass diff-card r d1"><p class="diff-n">01</p><div style="margin-bottom:12px;"></div><h3>Gratuidade total via </h3><p>Zero custo para as famílias. Em um mercado onde uma sessão de ABA custa entre R$ 150 e R$ 300, isso é um diferencial real e transformador.</p></div>
- <div class="glass diff-card r d2"><p class="diff-n">02</p><h3>Base científica sólida</h3><p>ABA contemporânea, naturalista e humanizada. Protocolos como ADOS-2 e WISC. Tudo verificável e baseado em evidências.</p></div>
- <div class="glass diff-card r d3"><p class="diff-n">03</p><h3>Governança inovadora</h3><p>Estrutura tripartite com fiscalização independente, segurança jurídica e continuidade institucional.</p></div>
- <div class="glass diff-card r d4"><p class="diff-n">04</p><h3>Referência comprovada</h3><p>Nosso modelo é baseado em um ambulatório com o mesmo nome que opera há mais de 10 anos em Curitiba, com efetividade clínica comprovada.</p></div>
- <div class="glass diff-card r d1"><p class="diff-n">05</p><h3>Abordagem centrada na família</h3><p>O cuidado não se restringe à criança. Acolhemos e capacitamos todo o núcleo familiar.</p></div>
- <div class="glass diff-card r d2"><p class="diff-n">06</p><h3>Impacto regional</h3><p>Pensamos além de São José do Rio Preto. Nossa visão alcança os 102 municípios da DRS15.</p></div>
- </div>
- </div>
- </section>
-
- <section class="sec-close">
- <div class="container">
- <h2 class="sec-title r" style="max-width:660px;margin:0 auto 18px;">Quer entender como sua família pode acessar o nosso atendimento?</h2>
- <div class="btns btns--center r d1">
- <a href="familias.html" class="btn-p">Informações para famílias</a>
- <a href="familias.html#fluxo" class="btn-g">Ver como o atendimento funciona</a>
- </div>
- </div>
- </section>
-  </main>
-  <footer>
- <div class="footer-in">
- <div>
- <h4>Links institucionais</h4>
- <ul>
- <li><a href="#">Política de Privacidade</a></li>
- <li><a href="#">Política de Cookies</a></li>
- <li><a href="#">Termos de Uso</a></li>
- <li><a href="#">Política da Ouvidoria</a></li>
- <li><a href="#">Política de Acesso à Informação</a></li>
- </ul>
- </div>
- <div>
- <h4>Canais</h4>
- <ul>
- <li><a href="mailto:contato@ibass.com.br">E-mail institucional: contato@ibass.com.br</a></li>
- <li><a href="https://ibass.com.br" target="_blank" rel="noopener noreferrer">Site institucional do IBASS</a></li>
- </ul>
- </div>
- </div>
- <div class="footer-copy">© Projeto Encantar · IBASS</div>
-  </footer>
-  <script>
- /* Blob parallax — apenas desktop com mouse */
- if (window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
- document.addEventListener('mousemove', e => {
- const px = (e.clientX / innerWidth  - 0.5) * 16;
- const py = (e.clientY / innerHeight - 0.5) * 16;
- document.querySelectorAll('.blob').forEach((b, i) => {
- b.style.transform = `translate(${px*(i+1)*.5}px, ${py*(i+1)*.5}px)`;
- });
- });
- }
- /* Scroll reveal */
- const obs = new IntersectionObserver(es => {
- es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
- }, { threshold: .08 });
- document.querySelectorAll('.r').forEach(el => obs.observe(el));
- document.querySelectorAll('.hero .r, .page-hero .r, .pg404 .r, .pg-thanks .r')
- .forEach((el, i) => setTimeout(() => el.classList.add('on'), i * 160));
- /* Menu mobile */
- const hb = document.getElementById('hamburger');
- const nm = document.getElementById('navMobile');
- if (hb && nm) {
- hb.addEventListener('click', () => {
- const o = nm.classList.toggle('open');
- hb.classList.toggle('open', o);
- hb.setAttribute('aria-expanded', o);
- document.body.style.overflow = o ? 'hidden' : '';
- });
- nm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
- nm.classList.remove('open'); hb.classList.remove('open');
- hb.setAttribute('aria-expanded','false'); document.body.style.overflow = '';
- }));
- }
-  </script>
 </body>
 </html>

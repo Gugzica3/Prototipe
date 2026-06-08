@@ -6,7 +6,7 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
-  <title>Página não encontrada — Projeto Encantar</title>
+  <title>Política de Acesso à Informação — Projeto Encantar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
@@ -52,17 +52,28 @@
 </div>
 
 <main>
-  <section class="pg404">
-    <div>
-      <div class="num r">404</div>
-      <h2 class="r d1">Essa página não existe — ou ainda não foi publicada.</h2>
-      <p class="r d2">Pode ser um link antigo, um endereço digitado errado ou um conteúdo que ainda está em construção.</p>
-      <div class="btns btns--center r d3">
-        <a href="index.html" class="btn-p">Voltar ao início</a>
-        <a href="contato.html" class="btn-g">Fale conosco</a>
+
+  <section class="sec page-hero">
+    <div class="container">
+      <p class="eyebrow r">Transparência</p>
+      <h1 class="sec-title r d1">Política de Acesso à Informação.</h1>
+      <p class="sec-sub r d2">Como solicitar informações sobre o Projeto Encantar, em conformidade com a Lei de Acesso à Informação (Lei nº 12.527/2011).</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <div class="glass highlight-card r" style="text-align:center;max-width:600px;margin:0 auto;">
+        <p style="font-size:40px;margin-bottom:16px;">📄</p>
+        <h2 class="sec-title">Em breve.</h2>
+        <p class="sec-sub">Este documento está sendo finalizado e será publicado em breve.</p>
+        <div class="btns btns--center" style="margin-top:28px;">
+          <a href="contato.html" class="btn-g">Fale conosco</a>
+        </div>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
@@ -103,7 +114,7 @@
     es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
   }, { threshold: .08 });
   document.querySelectorAll('.r').forEach(el => obs.observe(el));
-  document.querySelectorAll('.pg404 .r').forEach((el, i) => setTimeout(() => el.classList.add('on'), i * 160));
+  document.querySelectorAll('.page-hero .r').forEach((el, i) => setTimeout(() => el.classList.add('on'), i * 160));
   const hb = document.getElementById('hamburger');
   const nm = document.getElementById('navMobile');
   if (hb && nm) {
